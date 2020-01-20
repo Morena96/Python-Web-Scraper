@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('chat/', views.A),
+    path('', views.A),
     path('accounts/', include('django.contrib.auth.urls')),
     path('scraper/',views.scrap,name="scrap"),
     path('vip-youtube/',views.youtube,name="youtube"),
